@@ -12,6 +12,7 @@ ciEnvelope <- function(x,ylo,yhi,col="lightgrey",...){
                                                        ylo[sel[1]])), col=col,border = NA,...) 
   }
 }
+
 ##' Plot Phenocam data
 ##' 
 ##' @param dat  dataframe of date, gcc_mean, gcc_std
@@ -36,6 +37,7 @@ plot.phenocam <- function(dat,...){
     
     ## replot mean line
     lines(dat$date,dat$gcc_mean,lwd=1.5)
+    
   } else {
     print("plot.phenocam: input data not provided")
   }
